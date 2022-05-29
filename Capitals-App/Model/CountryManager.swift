@@ -18,8 +18,7 @@ struct CountryManager {
 
         if let safeData = data {
             countryList = safeData
-        }
-        
+        }        
         
         for item in countryList{
             print("\(item.name), \(item.capital)")
