@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Country{
-    let Name: String
-    let Capital: String
+struct CountryModel{
+    let name: String
+    let capital: String
 }

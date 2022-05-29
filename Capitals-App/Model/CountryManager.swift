@@ -8,71 +8,58 @@
 import Foundation
 
 struct CountryManager {
-    
-    var countryList : [Country] = []
-//
 
-    
-    mutating func getData(){
+    var countryList: [CountryModel] = []
 
-        
+    mutating func getData() {
+
+// country and capital data from https://geographyfieldwork.com/WorldCapitalCities.htm
         let data = readJSONFromFile(fileName: "data")
 
-        print(data![0].Capital)
-           
-          
+        if let safeData = data {
+            countryList = safeData
+        }
+        
+        
+        for item in countryList{
+            print("\(item.name), \(item.capital)")
+        }
+
+
     }
-    
+
 //     from https://www.knowband.com/blog/tutorials/read-data-local-json-file-swift/
-    func readJSONFromFile(fileName: String) -> [Country]?
+    func readJSONFromFile(fileName: String) -> [CountryModel]?
     {
-        var json: [Country]?
+        var json: [CountryModel]?
         if let path = Bundle.main.path(forResource: fileName, ofType: "json") {
             do {
                 let fileUrl = URL(fileURLWithPath: path)
                 // Getting data from JSON file using the file URL
                 let data = try Data(contentsOf: fileUrl, options: .mappedIfSafe)
-                
-                
-                
-                
+
                 let decoder = JSONDecoder()
                 do {
                     let decodedData = try decoder.decode(CountryData.self, from: data)
 
-                    
-                    var b: [Country] = []
-                    for item in decodedData.countries{
-                        let c = Country(Name: item.name, Capital: item.capital)
-                        b.append( c)
+                    var b: [CountryModel] = []
+                    for item in decodedData.countries {
+                        b.append(CountryModel(name: item.name, capital: item.capital))
                     }
-                    
-                    print(decodedData.countries[0].name)
-                    json =  b
-        //            let id = decodedData.weather[0].id
-        //            let temp = decodedData.main.temp
-        //            let name = decodedData.name
-        //
-        //            let weather = WeatherModel(conditionId: id, cityName: name, temperature: temp)
-        //            return weather
+
+                    json = b
 
                 } catch {
                     print(error)
-        //            delegate?.didFailWithError(error: error)
                 }
-                
-                
-                
-                
-//                json = try? JSONSerialization.jsonObject(with: data)
             } catch {
-                // Handle error here
+                print(error)
             }
         }
         return json
 
     }
-    
+
 
 
 }
