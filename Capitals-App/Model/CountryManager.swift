@@ -54,14 +54,22 @@ struct CountryManager {
     }
 
     func getOptionsText() -> [String] {
-        
+
         var optionsList: [String] = []
         for country in selectionOptions {
             optionsList.append(country.capital)
         }
-        
-        optionsList.append(getQuestionText())
+
+        optionsList.append(currentQuestion!.capital)
         return optionsList.shuffled()
+    }
+
+    func checkAnswer(userAnswer: String) -> Bool {
+        if(userAnswer == currentQuestion?.capital) {
+            return true
+        } else {
+            return false
+        }
     }
 
 

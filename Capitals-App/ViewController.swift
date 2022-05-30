@@ -31,18 +31,39 @@ class ViewController: UIViewController {
         updateUI()
     }
 
-    func updateUI() {
+    @objc func updateUI() {
         countryNameLabel.text = countryManager.getQuestionText()
 
         let optionsList: [String] = countryManager.getOptionsText()
 
-        answer1Button.titleLabel?.text = optionsList[0]
-        answer2Button.titleLabel?.text = optionsList[1]
-        answer3Button.titleLabel?.text = optionsList[2]
-        answer4Button.titleLabel?.text = optionsList[3]
+        answer1Button.setTitle(optionsList[0], for: .normal)
+        answer2Button.setTitle(optionsList[1], for: .normal)
+        answer3Button.setTitle(optionsList[2], for: .normal)
+        answer4Button.setTitle(optionsList[3], for: .normal)
 
+        answer1Button.backgroundColor = UIColor.clear
+        answer2Button.backgroundColor = UIColor.clear
+        answer3Button.backgroundColor = UIColor.clear
+        answer4Button.backgroundColor = UIColor.clear
     }
 
+    @IBAction func answerButtonPressed(_ sender: UIButton) {
+
+        let userAnswer = sender.currentTitle
+
+        let userGotItRight = countryManager.checkAnswer(userAnswer: userAnswer!)
+
+        if(userGotItRight) {
+            sender.backgroundColor = UIColor.green
+        } else {
+            sender.backgroundColor = UIColor.red
+        }
+
+        Timer.scheduledTimer(timeInterval: 0.4, target: self,
+            selector: #selector(updateUI), userInfo: nil, repeats: false)
+
+        countryManager.loadQuestion()
+    }
 
 }
 
