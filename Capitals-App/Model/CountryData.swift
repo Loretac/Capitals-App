@@ -7,12 +7,12 @@
 
 import Foundation
 
+// These structs are used for JSON parsing
 struct CountryData: Codable {
-    let countries: [SingleCountry]
+    let countries: [Country]
 }
 
-
-struct SingleCountry: Codable {
+struct Country: Codable {
     let name: String
     let capital: String
 }

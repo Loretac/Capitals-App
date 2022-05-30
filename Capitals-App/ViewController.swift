@@ -9,6 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var countryNameLabel: UILabel!
+    @IBOutlet weak var answer1Button: UIButton!
+    @IBOutlet weak var answer2Button: UIButton!
+    @IBOutlet weak var answer3Button: UIButton!
+    @IBOutlet weak var answer4Button: UIButton!
+    
+    @IBOutlet weak var settingsButton: UIButton!
+    
+    
     var countryManager = CountryManager()
 
     override func viewDidLoad() {

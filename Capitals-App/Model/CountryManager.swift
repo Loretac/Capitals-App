@@ -21,7 +21,7 @@ struct CountryManager {
         }        
         
         for item in countryList{
-            print("\(item.name), \(item.capital)")
+            print("\(item.name) | \(item.capital)")
         }
 
 
