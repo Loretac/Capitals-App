@@ -10,6 +10,8 @@ import Foundation
 struct CountryManager {
 
     var countryList: [CountryModel] = []
+    var currentQuestion: CountryModel?
+    var selectionOptions: [CountryModel] = []
 
     mutating func getData() {
 
@@ -18,14 +20,53 @@ struct CountryManager {
 
         if let safeData = data {
             countryList = safeData
-        }        
-        
-        for item in countryList{
+        }
+
+        for item in countryList {
             print("\(item.name) | \(item.capital)")
         }
 
 
     }
+
+
+
+    mutating func loadQuestion() {
+        // For now, just load a random question. In future, we may increment it
+
+        // Make a copy of the list of countries
+        var copyOfCountryList = countryList.shuffled()
+
+
+        currentQuestion = copyOfCountryList.removeLast()
+        selectionOptions = []
+
+        for _ in 0...2 {
+            selectionOptions.append(copyOfCountryList.removeLast())
+        }
+
+    }
+
+    func getQuestionText() -> String {
+
+        return currentQuestion!.name
+
+    }
+
+    func getOptionsText() -> [String] {
+        
+        var optionsList: [String] = []
+        for country in selectionOptions {
+            optionsList.append(country.capital)
+        }
+        
+        optionsList.append(getQuestionText())
+        return optionsList.shuffled()
+    }
+
+
+
+
 
 //     from https://www.knowband.com/blog/tutorials/read-data-local-json-file-swift/
     func readJSONFromFile(fileName: String) -> [CountryModel]?
