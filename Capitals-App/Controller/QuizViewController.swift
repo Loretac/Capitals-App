@@ -42,9 +42,9 @@ class QuizViewController: UIViewController {
         answer4Button.setTitle(optionsList[3], for: .normal)
 
         answer1Button.tintColor = UIColor.systemBlue
-        answer2Button.tintColor = UIColor.systemTeal
-        answer3Button.tintColor = UIColor.systemCyan
-        answer4Button.tintColor = UIColor.systemMint
+        answer2Button.tintColor = UIColor.systemBlue
+        answer3Button.tintColor = UIColor.systemBlue
+        answer4Button.tintColor = UIColor.systemBlue
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
