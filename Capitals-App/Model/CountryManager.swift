@@ -13,7 +13,7 @@ struct CountryManager {
     var currentQuestion: CountryModel?
     var selectionOptions: [CountryModel] = []
 
-    mutating func getData() {
+    mutating func initData() {
 
 // country and capital data from https://geographyfieldwork.com/WorldCapitalCities.htm
         let data = readJSONFromFile(fileName: "data")
@@ -53,14 +53,22 @@ struct CountryManager {
 
     }
 
-    func getOptionsText() -> [String] {
+    func getOptionsText(quizTypeIsCapitals: Bool) -> [String] {
 
         var optionsList: [String] = []
-        for country in selectionOptions {
-            optionsList.append(country.capital)
+
+        if(quizTypeIsCapitals == true) {
+            for country in selectionOptions {
+                optionsList.append(country.capital)
+            }
+            optionsList.append(currentQuestion!.capital)
+        } else {
+            for country in selectionOptions {
+                optionsList.append(country.iso_code)
+            }
+            optionsList.append(currentQuestion!.iso_code)
         }
 
-        optionsList.append(currentQuestion!.capital)
         return optionsList.shuffled()
     }
 
@@ -92,7 +100,7 @@ struct CountryManager {
 
                     var b: [CountryModel] = []
                     for item in decodedData.countries {
-                        b.append(CountryModel(name: item.name, capital: item.capital))
+                        b.append(CountryModel(name: item.name, capital: item.capital, iso_code: item.iso_code))
                     }
 
                     json = b

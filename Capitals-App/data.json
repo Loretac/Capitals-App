@@ -3,727 +3,988 @@
     [
      {
        "name": "Afghanistan",
-       "capital": "Kabul"
+       "capital": "Kabul",
+       "iso_code": "AF"
      },
      {
        "name": "Albania",
-       "capital": "Tirana (Tirane)"
+       "capital": "Tirana",
+       "iso_code": "AL"
      },
      {
        "name": "Algeria",
-       "capital": "Algiers"
+       "capital": "Algiers",
+       "iso_code": "DZ"
      },
      {
        "name": "Andorra",
-       "capital": "Andorra la Vella"
+       "capital": "Andorra la Vella",
+       "iso_code": "AD"
      },
      {
        "name": "Angola",
-       "capital": "Luanda"
+       "capital": "Luanda",
+       "iso_code": "AO"
      },
      {
        "name": "Antigua and Barbuda",
-       "capital": "Saint John's"
+       "capital": "St. John's",
+       "iso_code": "AG"
      },
      {
        "name": "Argentina",
-       "capital": "Buenos Aires"
+       "capital": "Buenos Aires",
+       "iso_code": "AR"
      },
      {
        "name": "Armenia",
-       "capital": "Yerevan"
+       "capital": "Yerevan",
+       "iso_code": "AM"
      },
      {
        "name": "Australia",
-       "capital": "Canberra"
+       "capital": "Canberra",
+       "iso_code": "AU"
      },
      {
        "name": "Austria",
-       "capital": "Vienna"
+       "capital": "Vienna",
+       "iso_code": "AT"
      },
      {
        "name": "Azerbaijan",
-       "capital": "Baku"
+       "capital": "Baku",
+       "iso_code": "AZ"
      },
      {
        "name": "Bahamas",
-       "capital": "Nassau"
+       "capital": "Nassau",
+       "iso_code": "BS"
      },
      {
        "name": "Bahrain",
-       "capital": "Manama"
+       "capital": "Manama",
+       "iso_code": "BH"
      },
      {
        "name": "Bangladesh",
-       "capital": "Dhaka"
+       "capital": "Dhaka",
+       "iso_code": "BD"
      },
      {
        "name": "Barbados",
-       "capital": "Bridgetown"
+       "capital": "Bridgetown",
+       "iso_code": "BB"
      },
      {
        "name": "Belarus",
-       "capital": "Minsk"
+       "capital": "Minsk",
+       "iso_code": "BY"
      },
      {
        "name": "Belgium",
-       "capital": "Brussels"
+       "capital": "Brussels",
+       "iso_code": "BE"
      },
      {
        "name": "Belize",
-       "capital": "Belmopan"
+       "capital": "Belmopan",
+       "iso_code": "BZ"
      },
      {
        "name": "Benin",
-       "capital": "Porto Novo"
+       "capital": "Porto Novo",
+       "iso_code": "BJ"
      },
      {
        "name": "Bhutan",
-       "capital": "Thimphu"
+       "capital": "Thimphu",
+       "iso_code": "BT"
      },
      {
        "name": "Bolivia",
-       "capital": "Sucre"
+       "capital": "Sucre",
+       "iso_code": "BO"
      },
      {
        "name": "Bosnia and Herzegovina",
-       "capital": "Sarajevo"
+       "capital": "Sarajevo",
+       "iso_code": "BA"
      },
      {
        "name": "Botswana",
-       "capital": "Gaborone"
+       "capital": "Gaborone",
+       "iso_code": "BW"
      },
      {
        "name": "Brazil",
-       "capital": "Brasilia"
+       "capital": "Brasilia",
+       "iso_code": "BR"
      },
      {
        "name": "Brunei",
-       "capital": "Bandar Seri Begawan"
+       "capital": "Bandar Seri Begawan",
+       "iso_code": "BN"
      },
      {
        "name": "Bulgaria",
-       "capital": "Sofia"
+       "capital": "Sofia",
+       "iso_code": "BG"
      },
      {
        "name": "Burkina Faso",
-       "capital": "Ouagadougou"
+       "capital": "Ouagadougou",
+       "iso_code": "BF"
      },
      {
        "name": "Burundi",
-       "capital": "Gitega"
+       "capital": "Bujumbura",
+       "iso_code": "BI"
      },
      {
        "name": "Cambodia",
-       "capital": "Phnom Penh"
+       "capital": "Phnom Penh",
+       "iso_code": "KH"
      },
      {
        "name": "Cameroon",
-       "capital": "Yaounde"
+       "capital": "Yaoundé",
+       "iso_code": "CM"
      },
      {
        "name": "Canada",
-       "capital": "Ottawa"
+       "capital": "Ottawa",
+       "iso_code": "CA"
      },
      {
        "name": "Cape Verde",
-       "capital": "Praia"
+       "capital": "Praia",
+       "iso_code": "CV"
      },
      {
        "name": "Central African Republic",
-       "capital": "Bangui"
+       "capital": "Bangui",
+       "iso_code": "CF"
      },
      {
        "name": "Chad",
-       "capital": "N'Djamena"
+       "capital": "N'Djamena",
+       "iso_code": "TD"
      },
      {
        "name": "Chile",
-       "capital": "Santiago"
+       "capital": "Santiago",
+       "iso_code": "CL"
      },
      {
        "name": "China",
-       "capital": "Beijing"
+       "capital": "Beijing",
+       "iso_code": "CN"
      },
      {
        "name": "Colombia",
-       "capital": "Bogota"
+       "capital": "Bogota",
+       "iso_code": "CO"
      },
      {
        "name": "Comoros",
-       "capital": "Moroni"
-     },
-     {
-       "name": "Congo, Democratic Republic of the",
-       "capital": "Kinshasa"
-     },
-     {
-       "name": "Congo, Republic of the",
-       "capital": "Brazzaville"
+       "capital": "Moroni",
+       "iso_code": "KM"
      },
      {
        "name": "Costa Rica",
-       "capital": "San Jose"
-     },
-     {
-       "name": "Côte d'Ivoire (Ivory Coast)",
-       "capital": "Yamoussoukro"
+       "capital": "San José",
+       "iso_code": "CR"
      },
      {
        "name": "Croatia",
-       "capital": "Zagreb"
+       "capital": "Zagreb",
+       "iso_code": "HR"
      },
      {
        "name": "Cuba",
-       "capital": "Havana"
+       "capital": "Havana",
+       "iso_code": "CU"
      },
      {
        "name": "Cyprus",
-       "capital": "Nicosia"
+       "capital": "Nicosia",
+       "iso_code": "CY"
      },
      {
        "name": "Czech Republic",
-       "capital": "Prague"
+       "capital": "Prague",
+       "iso_code": "CZ"
+     },
+     {
+       "name": "Democratic Republic of Congo",
+       "capital": "Kinshasa",
+       "iso_code": "CD"
      },
      {
        "name": "Denmark",
-       "capital": "Copenhagen"
+       "capital": "Copenagen",
+       "iso_code": "DK"
      },
      {
        "name": "Djibouti",
-       "capital": "Djibouti"
+       "capital": "Djibouti",
+       "iso_code": "DJ"
      },
      {
        "name": "Dominica",
-       "capital": "Roseau"
+       "capital": "Roseau",
+       "iso_code": "DM"
      },
      {
        "name": "Dominican Republic",
-       "capital": "Santo Domingo"
+       "capital": "Santo Domingo",
+       "iso_code": "DO"
      },
      {
        "name": "East Timor",
-       "capital": "Dili"
+       "capital": "Dili",
+       "iso_code": "TL"
      },
      {
        "name": "Ecuador",
-       "capital": "Quito"
+       "capital": "Quito",
+       "iso_code": "EC"
      },
      {
        "name": "Egypt",
-       "capital": "Cairo"
+       "capital": "Cairo",
+       "iso_code": "EG"
      },
      {
        "name": "El Salvador",
-       "capital": "San Salvador"
-     },
-     {
-       "name": "England",
-       "capital": "London"
+       "capital": "San Salvador",
+       "iso_code": "SV"
      },
      {
        "name": "Equatorial Guinea",
-       "capital": "Malabo"
+       "capital": "Malabo",
+       "iso_code": "GQ"
      },
      {
        "name": "Eritrea",
-       "capital": "Asmara"
+       "capital": "Asmara",
+       "iso_code": "ER"
      },
      {
        "name": "Estonia",
-       "capital": "Tallinn"
+       "capital": "Tallinn",
+       "iso_code": "EE"
      },
      {
-       "name": "Eswatini (Swaziland)",
-       "capital": "Mbabana"
+       "name": "Eswatini",
+       "capital": "Mbabane",
+       "iso_code": "SZ"
      },
      {
        "name": "Ethiopia",
-       "capital": "Addis Ababa"
-     },
-     {
-       "name": "Federated States of Micronesia",
-       "capital": "Palikir"
+       "capital": "Addis Ababa",
+       "iso_code": "ET"
      },
      {
        "name": "Fiji",
-       "capital": "Suva"
+       "capital": "Suva",
+       "iso_code": "FJ"
      },
      {
        "name": "Finland",
-       "capital": "Helsinki"
+       "capital": "Helsinki",
+       "iso_code": "FI"
      },
      {
        "name": "France",
-       "capital": "Paris"
+       "capital": "Paris",
+       "iso_code": "FR"
      },
      {
        "name": "Gabon",
-       "capital": "Libreville"
+       "capital": "Libreville",
+       "iso_code": "GA"
      },
      {
        "name": "Gambia",
-       "capital": "Banjul"
+       "capital": "Banjul",
+       "iso_code": "GM"
      },
      {
        "name": "Georgia",
-       "capital": "Tbilisi"
+       "capital": "Tbilisi",
+       "iso_code": "GE"
      },
      {
        "name": "Germany",
-       "capital": "Berlin"
+       "capital": "Berlin",
+       "iso_code": "DE"
      },
      {
        "name": "Ghana",
-       "capital": "Accra"
+       "capital": "Accra",
+       "iso_code": "GH"
      },
      {
        "name": "Greece",
-       "capital": "Athens"
+       "capital": "Athens",
+       "iso_code": "GR"
      },
      {
        "name": "Grenada",
-       "capital": "Saint George's"
+       "capital": "St. George's",
+       "iso_code": "GD"
      },
      {
        "name": "Guatemala",
-       "capital": "Guatemala City"
+       "capital": "Guatemala City",
+       "iso_code": "GT"
      },
      {
        "name": "Guinea",
-       "capital": "Conakry"
+       "capital": "Conakry",
+       "iso_code": "GN"
      },
      {
        "name": "Guinea-Bissau",
-       "capital": "Bissau"
+       "capital": "Bissau",
+       "iso_code": "GW"
      },
      {
        "name": "Guyana",
-       "capital": "Georgetown"
+       "capital": "Georgetown",
+       "iso_code": "GY"
      },
      {
        "name": "Haiti",
-       "capital": "Port au Prince"
+       "capital": "Port-au-Prince",
+       "iso_code": "HT"
      },
      {
        "name": "Honduras",
-       "capital": "Tegucigalpa"
+       "capital": "Tegucigalpa",
+       "iso_code": "HN"
      },
      {
        "name": "Hungary",
-       "capital": "Budapest"
+       "capital": "Budapest",
+       "iso_code": "HU"
      },
      {
        "name": "Iceland",
-       "capital": "Reykjavik"
+       "capital": "Reykjavík",
+       "iso_code": "IS"
      },
      {
        "name": "India",
-       "capital": "New Delhi"
+       "capital": "New Delhi",
+       "iso_code": "IN"
      },
      {
        "name": "Indonesia",
-       "capital": "Jakarta"
+       "capital": "Jakarta",
+       "iso_code": "ID"
      },
      {
        "name": "Iran",
-       "capital": "Tehran"
+       "capital": "Tehran",
+       "iso_code": "IR"
      },
      {
        "name": "Iraq",
-       "capital": "Baghdad"
+       "capital": "Baghdad",
+       "iso_code": "IQ"
      },
      {
        "name": "Ireland",
-       "capital": "Dublin"
+       "capital": "Dublin",
+       "iso_code": "IE"
      },
      {
        "name": "Israel",
-       "capital": "Jerusalem"
+       "capital": "Jerusalem",
+       "iso_code": "IL"
      },
      {
        "name": "Italy",
-       "capital": "Rome"
+       "capital": "Rome",
+       "iso_code": "IT"
+     },
+     {
+       "name": "Ivory Coast",
+       "capital": "Yamoussoukro",
+       "iso_code": "CI"
      },
      {
        "name": "Jamaica",
-       "capital": "Kingston"
+       "capital": "Kingston",
+       "iso_code": "JM"
      },
      {
        "name": "Japan",
-       "capital": "Tokyo"
+       "capital": "Tokyo",
+       "iso_code": "JP"
      },
      {
        "name": "Jordan",
-       "capital": "Amman"
+       "capital": "Amman",
+       "iso_code": "JO"
      },
      {
        "name": "Kazakhstan",
-       "capital": "Nur-Sultan"
+       "capital": "Astana",
+       "iso_code": "KZ"
      },
      {
        "name": "Kenya",
-       "capital": "Nairobi"
+       "capital": "Nairobi",
+       "iso_code": "KE"
      },
      {
        "name": "Kiribati",
-       "capital": "Tarawa Atoll"
+       "capital": "Tarawa",
+       "iso_code": "KI"
+     },
+     {
+       "name": "Korea, North",
+       "capital": "Pyongyang",
+       "iso_code": "KP"
+     },
+     {
+       "name": "Korea, South",
+       "capital": "Seoul",
+       "iso_code": "KR"
      },
      {
        "name": "Kosovo",
-       "capital": "Pristina"
+       "capital": "Pristina",
+       "iso_code": "-"
      },
      {
        "name": "Kuwait",
-       "capital": "Kuwait City"
+       "capital": "Kuwait City",
+       "iso_code": "KW"
      },
      {
        "name": "Kyrgyzstan",
-       "capital": "Bishkek"
+       "capital": "Bishkek",
+       "iso_code": "KG"
      },
      {
        "name": "Laos",
-       "capital": "Vientiane"
+       "capital": "Vientiane",
+       "iso_code": "LA"
      },
      {
        "name": "Latvia",
-       "capital": "Riga"
+       "capital": "Riga",
+       "iso_code": "LV"
      },
      {
        "name": "Lebanon",
-       "capital": "Beirut"
+       "capital": "Beirut",
+       "iso_code": "LB"
      },
      {
        "name": "Lesotho",
-       "capital": "Maseru"
+       "capital": "Maseru",
+       "iso_code": "LS"
      },
      {
        "name": "Liberia",
-       "capital": "Monrovia"
+       "capital": "Monrovia",
+       "iso_code": "LR"
      },
      {
        "name": "Libya",
-       "capital": "Tripoli"
+       "capital": "Tripoli",
+       "iso_code": "LY"
      },
      {
        "name": "Liechtenstein",
-       "capital": "Vaduz"
+       "capital": "Vaduz",
+       "iso_code": "LI"
      },
      {
        "name": "Lithuania",
-       "capital": "Vilnius"
+       "capital": "Vilnius",
+       "iso_code": "LT"
      },
      {
        "name": "Luxembourg",
-       "capital": "Luxembourg"
+       "capital": "Luxembourg",
+       "iso_code": "LU"
      },
      {
        "name": "Madagascar",
-       "capital": "Antananarivo"
+       "capital": "Antananarivo",
+       "iso_code": "MG"
      },
      {
        "name": "Malawi",
-       "capital": "Lilongwe"
+       "capital": "Lilongwe",
+       "iso_code": "MW"
      },
      {
        "name": "Malaysia",
-       "capital": "Kuala Lumpur"
+       "capital": "Kuala Lumpur",
+       "iso_code": "MY"
      },
      {
        "name": "Maldives",
-       "capital": "Male"
+       "capital": "Malé",
+       "iso_code": "MV"
      },
      {
        "name": "Mali",
-       "capital": "Bamako"
+       "capital": "Bamako",
+       "iso_code": "ML"
      },
      {
        "name": "Malta",
-       "capital": "Valletta"
+       "capital": "Valletta",
+       "iso_code": "MT"
      },
      {
        "name": "Marshall Islands",
-       "capital": "Majuro"
+       "capital": "Majuro",
+       "iso_code": "MH"
      },
      {
        "name": "Mauritania",
-       "capital": "Nouakchott"
+       "capital": "Nouakchott",
+       "iso_code": "MR"
      },
      {
        "name": "Mauritius",
-       "capital": "Port Louis"
+       "capital": "Port Louis",
+       "iso_code": "MU"
      },
      {
        "name": "Mexico",
-       "capital": "Mexico City"
+       "capital": "Mexico City",
+       "iso_code": "MX"
+     },
+     {
+       "name": "Micronesia",
+       "capital": "Palikir",
+       "iso_code": "FM"
      },
      {
        "name": "Moldova",
-       "capital": "Chisinau"
+       "capital": "Chisinau",
+       "iso_code": "MD"
      },
      {
        "name": "Monaco",
-       "capital": "Monaco"
+       "capital": "Monaco",
+       "iso_code": "MC"
      },
      {
        "name": "Mongolia",
-       "capital": "Ulaanbaatar"
+       "capital": "Ulaanbaatar",
+       "iso_code": "MN"
      },
      {
        "name": "Montenegro",
-       "capital": "Podgorica"
+       "capital": "Podgorica",
+       "iso_code": "ME"
      },
      {
        "name": "Morocco",
-       "capital": "Rabat"
+       "capital": "Rabat",
+       "iso_code": "MA"
      },
      {
        "name": "Mozambique",
-       "capital": "Maputo"
+       "capital": "Maputo",
+       "iso_code": "MZ"
      },
      {
-       "name": "Myanmar (Burma)",
-       "capital": "Nay Pyi Taw"
+       "name": "Myanmar",
+       "capital": "Naypyidaw",
+       "iso_code": "MM"
      },
      {
        "name": "Namibia",
-       "capital": "Windhoek"
+       "capital": "Windhoek",
+       "iso_code": "NA"
      },
      {
        "name": "Nauru",
-       "capital": "No official capital"
+       "capital": "Yaren",
+       "iso_code": "NR"
      },
      {
        "name": "Nepal",
-       "capital": "Kathmandu"
+       "capital": "Kathmandu",
+       "iso_code": "NP"
      },
      {
        "name": "Netherlands",
-       "capital": "Amsterdam"
+       "capital": "Amsterdam",
+       "iso_code": "NL"
      },
      {
        "name": "New Zealand",
-       "capital": "Wellington"
+       "capital": "Wellington",
+       "iso_code": "NZ"
      },
      {
        "name": "Nicaragua",
-       "capital": "Managua"
+       "capital": "Managua",
+       "iso_code": "NI"
      },
      {
        "name": "Niger",
-       "capital": "Niamey"
+       "capital": "Niamey",
+       "iso_code": "NE"
      },
      {
        "name": "Nigeria",
-       "capital": "Abuja"
+       "capital": "Abuja",
+       "iso_code": "NG"
      },
      {
-       "name": "North Korea",
-       "capital": "Pyongyang"
-     },
-     {
-       "name": "North Macedonia (Macedonia)",
-       "capital": "Skopje"
-     },
-     {
-       "name": "Northern Ireland",
-       "capital": "Belfast"
+       "name": "North Macedonia",
+       "capital": "Skopje",
+       "iso_code": "MK"
      },
      {
        "name": "Norway",
-       "capital": "Oslo"
+       "capital": "Oslo",
+       "iso_code": "NO"
      },
      {
        "name": "Oman",
-       "capital": "Muscat"
+       "capital": "Muscat",
+       "iso_code": "OM"
      },
      {
        "name": "Pakistan",
-       "capital": "Islamabad"
+       "capital": "Islamabad",
+       "iso_code": "PK"
      },
      {
        "name": "Palau",
-       "capital": "Melekeok"
+       "capital": "Melekeok",
+       "iso_code": "PW"
+     },
+     {
+       "name": "Palestine",
+       "capital": "East Jerusalem",
+       "iso_code": "PS"
      },
      {
        "name": "Panama",
-       "capital": "Panama City"
+       "capital": "Panama City",
+       "iso_code": "PA"
      },
      {
        "name": "Papua New Guinea",
-       "capital": "Port Moresby"
+       "capital": "Port Moresby",
+       "iso_code": "PG"
      },
      {
        "name": "Paraguay",
-       "capital": "Asuncion"
+       "capital": "Asunción",
+       "iso_code": "PY"
      },
      {
        "name": "Peru",
-       "capital": "Lima"
+       "capital": "Lima",
+       "iso_code": "PE"
      },
      {
        "name": "Philippines",
-       "capital": "Manila"
+       "capital": "Manila",
+       "iso_code": "PH"
      },
      {
        "name": "Poland",
-       "capital": "Warsaw"
+       "capital": "Warsaw",
+       "iso_code": "PL"
      },
      {
        "name": "Portugal",
-       "capital": "Lisbon"
+       "capital": "Lisbon",
+       "iso_code": "PT"
      },
      {
        "name": "Qatar",
-       "capital": "Doha"
+       "capital": "Doha",
+       "iso_code": "QA"
+     },
+     {
+       "name": "Republic of the Congo",
+       "capital": "Brazzaville",
+       "iso_code": "CG"
      },
      {
        "name": "Romania",
-       "capital": "Bucharest"
+       "capital": "Bucharest",
+       "iso_code": "RO"
      },
      {
        "name": "Russia",
-       "capital": "Moscow"
+       "capital": "Moscow",
+       "iso_code": "RU"
      },
      {
        "name": "Rwanda",
-       "capital": "Kigali"
+       "capital": "Kigali",
+       "iso_code": "RW"
      },
      {
        "name": "Saint Kitts and Nevis",
-       "capital": "Basseterre"
+       "capital": "Basseterre",
+       "iso_code": "KN"
      },
      {
        "name": "Saint Lucia",
-       "capital": "Castries"
+       "capital": "Castries",
+       "iso_code": "LC"
      },
      {
        "name": "Saint Vincent and the Grenadines",
-       "capital": "Kingstown"
+       "capital": "Kingstown",
+       "iso_code": "VC"
      },
      {
        "name": "Samoa",
-       "capital": "Apia"
+       "capital": "Apia",
+       "iso_code": "WS"
      },
      {
        "name": "San Marino",
-       "capital": "San Marino"
+       "capital": "San Marino",
+       "iso_code": "SM"
      },
      {
-       "name": "Sao Tome and Principe",
-       "capital": "Sao Tome"
+       "name": "São Tomé and Príncipe",
+       "capital": "São Tomé",
+       "iso_code": "ST"
      },
      {
        "name": "Saudi Arabia",
-       "capital": "Riyadh"
-     },
-     {
-       "name": "Scotland",
-       "capital": "Edinburgh"
+       "capital": "Riyadh",
+       "iso_code": "SA"
      },
      {
        "name": "Senegal",
-       "capital": "Dakar"
+       "capital": "Dakar",
+       "iso_code": "SN"
      },
      {
        "name": "Serbia",
-       "capital": "Belgrade"
+       "capital": "Belgrade",
+       "iso_code": "RS"
      },
      {
        "name": "Seychelles",
-       "capital": "Victoria"
+       "capital": "Victoria",
+       "iso_code": "SC"
      },
      {
        "name": "Sierra Leone",
-       "capital": "Freetown"
+       "capital": "Freetown",
+       "iso_code": "SL"
      },
      {
        "name": "Singapore",
-       "capital": "Singapore"
+       "capital": "Singapore",
+       "iso_code": "SG"
      },
      {
        "name": "Slovakia",
-       "capital": "Bratislava"
+       "capital": "Bratislava",
+       "iso_code": "SK"
      },
      {
        "name": "Slovenia",
-       "capital": "Ljubljana"
+       "capital": "Ljubljana",
+       "iso_code": "SI"
      },
      {
        "name": "Solomon Islands",
-       "capital": "Honiara"
+       "capital": "Honiara",
+       "iso_code": "SB"
      },
      {
        "name": "Somalia",
-       "capital": "Mogadishu"
+       "capital": "Mogadishu",
+       "iso_code": "SO"
      },
      {
        "name": "South Africa",
-       "capital": "Pretoria, Bloemfontein, Cape Town"
-     },
-     {
-       "name": "South Korea",
-       "capital": "Seoul"
+       "capital": "Pretoria",
+       "iso_code": "ZA"
      },
      {
        "name": "South Sudan",
-       "capital": "Juba"
+       "capital": "Juba",
+       "iso_code": "SS"
      },
      {
        "name": "Spain",
-       "capital": "Madrid"
+       "capital": "Madrid",
+       "iso_code": "ES"
      },
      {
        "name": "Sri Lanka",
-       "capital": "Sri Jayawardenapura Kotte"
+       "capital": "Sri Jayawardenapura Kotte",
+       "iso_code": "LK"
      },
      {
        "name": "Sudan",
-       "capital": "Khartoum"
+       "capital": "Khartoum",
+       "iso_code": "SD"
      },
      {
        "name": "Suriname",
-       "capital": "Paramaribo"
+       "capital": "Paramaribo",
+       "iso_code": "SR"
      },
      {
        "name": "Sweden",
-       "capital": "Stockholm"
+       "capital": "Stockholm",
+       "iso_code": "SE"
      },
      {
        "name": "Switzerland",
-       "capital": "Bern"
+       "capital": "Bern",
+       "iso_code": "CH"
      },
      {
        "name": "Syria",
-       "capital": "Damascus"
+       "capital": "Damascus",
+       "iso_code": "SY"
      },
      {
        "name": "Taiwan",
-       "capital": "Taipei"
+       "capital": "Taipei",
+       "iso_code": "TW"
      },
      {
        "name": "Tajikistan",
-       "capital": "Dushanbe"
+       "capital": "Dushanbe",
+       "iso_code": "TJ"
      },
      {
        "name": "Tanzania",
-       "capital": "Dodoma"
+       "capital": "Dodoma",
+       "iso_code": "TZ"
      },
      {
        "name": "Thailand",
-       "capital": "Bangkok"
+       "capital": "Bangkok",
+       "iso_code": "TH"
      },
      {
        "name": "Togo",
-       "capital": "Lome"
+       "capital": "Lomé",
+       "iso_code": "TG"
      },
      {
        "name": "Tonga",
-       "capital": "Nuku'alofa"
+       "capital": "Nukualofa",
+       "iso_code": "TO"
      },
      {
        "name": "Trinidad and Tobago",
-       "capital": "Port of Spain"
+       "capital": "Port of Spain",
+       "iso_code": "TT"
+     },
+     {
+       "name": "Tunisia",
+       "capital": "Tunis",
+       "iso_code": "TN"
+     },
+     {
+       "name": "Turkey",
+       "capital": "Ankara",
+       "iso_code": "TR"
+     },
+     {
+       "name": "Turkmenistan",
+       "capital": "Ashgabat",
+       "iso_code": "TM"
+     },
+     {
+       "name": "Tuvalu",
+       "capital": "Funafuti",
+       "iso_code": "TV"
+     },
+     {
+       "name": "Uganda",
+       "capital": "Kampala",
+       "iso_code": "UG"
+     },
+     {
+       "name": "Ukraine",
+       "capital": "Kiev",
+       "iso_code": "UA"
+     },
+     {
+       "name": "United Arab Emirates",
+       "capital": "Abu Dhabi",
+       "iso_code": "AE"
+     },
+     {
+       "name": "United Kingdom",
+       "capital": "London",
+       "iso_code": "GB"
+     },
+     {
+       "name": "United States",
+       "capital": "Washington D.C.",
+       "iso_code": "US"
+     },
+     {
+       "name": "Uruguay",
+       "capital": "Montevideo",
+       "iso_code": "UY"
+     },
+     {
+       "name": "Uzbekistan",
+       "capital": "Tashkent",
+       "iso_code": "UZ"
+     },
+     {
+       "name": "Vanuatu",
+       "capital": "Port Vila",
+       "iso_code": "VU"
+     },
+     {
+       "name": "Vatican City",
+       "capital": "Vatican City",
+       "iso_code": "VA"
+     },
+     {
+       "name": "Venezuela",
+       "capital": "Caracas",
+       "iso_code": "VE"
+     },
+     {
+       "name": "Vietnam",
+       "capital": "Hanoi",
+       "iso_code": "VN"
+     },
+     {
+       "name": "Yemen",
+       "capital": "Sana'a",
+       "iso_code": "YE"
+     },
+     {
+       "name": "Zambia",
+       "capital": "Lusaka",
+       "iso_code": "ZM"
+     },
+     {
+       "name": "Zimbabwe",
+       "capital": "Harare",
+       "iso_code": "ZW"
      }
     ]
 }

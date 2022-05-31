@@ -29,6 +29,9 @@
                                                     <segment title="Capitals"/>
                                                     <segment title="Flags"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="quizTypeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ttP-XD-KU2"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUe-qF-Y7Y">
                                                 <rect key="frame" x="15" y="71" width="260" height="53"/>
@@ -57,8 +60,8 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spF-Ia-VK3">
                                                         <rect key="frame" x="0.0" y="0.0" width="137.5" height="93"/>
                                                         <color key="tintColor" systemColor="systemBlueColor"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="tinted" cornerStyle="small"/>
                                                         <connections>
                                                             <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5R-yi-suc"/>
                                                         </connections>
@@ -66,8 +69,8 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQy-7d-86o">
                                                         <rect key="frame" x="152.5" y="0.0" width="137.5" height="93"/>
                                                         <color key="tintColor" systemColor="systemBlueColor"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="tinted" cornerStyle="small"/>
                                                         <connections>
                                                             <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m1S-f3-BL7"/>
                                                         </connections>
@@ -80,8 +83,8 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eF4-lv-Lsw">
                                                         <rect key="frame" x="0.0" y="0.0" width="137.5" height="92.5"/>
                                                         <color key="tintColor" systemColor="systemBlueColor"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="tinted" cornerStyle="small"/>
                                                         <connections>
                                                             <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yEB-4F-Qji"/>
                                                         </connections>
@@ -89,8 +92,8 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XC-qr-Nui">
                                                         <rect key="frame" x="152.5" y="0.0" width="137.5" height="92.5"/>
                                                         <color key="tintColor" systemColor="systemBlueColor"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="tinted" cornerStyle="small"/>
                                                         <connections>
                                                             <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vvf-0C-H5F"/>
                                                         </connections>
@@ -125,6 +128,7 @@
                         <outlet property="answer3Button" destination="eF4-lv-Lsw" id="832-of-PQ5"/>
                         <outlet property="answer4Button" destination="7XC-qr-Nui" id="r5b-De-GQN"/>
                         <outlet property="countryNameLabel" destination="lUe-qF-Y7Y" id="gLu-7P-F2r"/>
+                        <outlet property="quizTypeSelector" destination="w1Z-6A-nnY" id="wo7-2B-zQw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

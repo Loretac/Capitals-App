@@ -10,4 +10,5 @@ import Foundation
 struct CountryModel{
     let name: String
     let capital: String
+    let iso_code: String
 }
