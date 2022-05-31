@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UjL-bp-h6N">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,69 +13,70 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="QuizViewController" customModule="Capitals_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="7ri-9o-bCz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PdC-n7-kUO" userLabel="TopView">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="302"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="377.5"/>
                                         <subviews>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w1Z-6A-nnY">
-                                                <rect key="frame" x="118" y="10" width="139" height="32"/>
+                                                <rect key="frame" x="137.5" y="10" width="139" height="32"/>
                                                 <segments>
                                                     <segment title="Capitals"/>
                                                     <segment title="Flags"/>
                                                 </segments>
                                             </segmentedControl>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUe-qF-Y7Y">
-                                                <rect key="frame" x="168.5" y="71" width="38.5" height="53"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUe-qF-Y7Y">
+                                                <rect key="frame" x="15" y="71" width="384" height="53"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="lUe-qF-Y7Y" firstAttribute="centerX" secondItem="PdC-n7-kUO" secondAttribute="centerX" id="21u-is-vD3"/>
+                                            <constraint firstAttribute="trailing" secondItem="lUe-qF-Y7Y" secondAttribute="trailing" constant="15" id="6Gk-i2-YT3"/>
                                             <constraint firstItem="w1Z-6A-nnY" firstAttribute="top" secondItem="PdC-n7-kUO" secondAttribute="top" constant="10" id="Rk2-Qk-LCW"/>
                                             <constraint firstItem="lUe-qF-Y7Y" firstAttribute="centerX" secondItem="PdC-n7-kUO" secondAttribute="centerX" id="gNt-CK-Fuz"/>
+                                            <constraint firstItem="lUe-qF-Y7Y" firstAttribute="leading" secondItem="PdC-n7-kUO" secondAttribute="leading" constant="15" id="l6H-TU-BT5"/>
                                             <constraint firstItem="w1Z-6A-nnY" firstAttribute="centerX" secondItem="PdC-n7-kUO" secondAttribute="centerX" id="xH3-ME-MMW"/>
                                             <constraint firstItem="lUe-qF-Y7Y" firstAttribute="top" secondItem="w1Z-6A-nnY" secondAttribute="bottom" constant="30" id="yOq-Pv-ktS"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Nv-4l-CLH" userLabel="ChoicesView">
-                                        <rect key="frame" x="0.0" y="316" width="375" height="302"/>
+                                        <rect key="frame" x="0.0" y="391.5" width="414" height="377.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spF-Ia-VK3">
-                                                <rect key="frame" x="15" y="15" width="165" height="128.5"/>
+                                                <rect key="frame" x="15" y="15" width="184.5" height="166.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="tinted"/>
+                                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="small"/>
                                                 <connections>
                                                     <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C5R-yi-suc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQy-7d-86o">
-                                                <rect key="frame" x="195" y="15" width="165" height="128.5"/>
+                                                <rect key="frame" x="214.5" y="15" width="184.5" height="166.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="tinted"/>
+                                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="small"/>
                                                 <connections>
                                                     <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m1S-f3-BL7"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XC-qr-Nui">
-                                                <rect key="frame" x="195" y="158.5" width="165" height="128.5"/>
+                                                <rect key="frame" x="214.5" y="196.5" width="184.5" height="166"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="tinted"/>
+                                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="small"/>
                                                 <connections>
                                                     <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vvf-0C-H5F"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eF4-lv-Lsw">
-                                                <rect key="frame" x="15" y="158.5" width="165" height="128.5"/>
+                                                <rect key="frame" x="15" y="196.5" width="184.5" height="166"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="tinted"/>
+                                                <buttonConfiguration key="configuration" style="tinted" cornerStyle="small"/>
                                                 <connections>
                                                     <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yEB-4F-Qji"/>
                                                 </connections>
@@ -116,7 +116,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7ri-9o-bCz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="B1J-0C-AG1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7ri-9o-bCz" secondAttribute="bottom" id="HIq-lc-Ubs"/>
@@ -142,7 +142,7 @@
             <objects>
                 <viewController id="xuj-cO-evW" customClass="SettingsViewController" customModule="Capitals_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tau-0h-pbH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnV-74-b7q">
@@ -190,7 +190,7 @@
             <objects>
                 <viewController id="hCV-CH-RSc" customClass="CountryListViewController" customModule="Capitals_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LSY-w3-m48">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="tcO-G5-c9x"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -206,8 +206,5 @@
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="globe.americas.fill" catalog="system" width="128" height="121"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

@@ -41,10 +41,10 @@ class QuizViewController: UIViewController {
         answer3Button.setTitle(optionsList[2], for: .normal)
         answer4Button.setTitle(optionsList[3], for: .normal)
 
-        answer1Button.backgroundColor = UIColor.clear
-        answer2Button.backgroundColor = UIColor.clear
-        answer3Button.backgroundColor = UIColor.clear
-        answer4Button.backgroundColor = UIColor.clear
+        answer1Button.tintColor = UIColor.systemBlue
+        answer2Button.tintColor = UIColor.systemTeal
+        answer3Button.tintColor = UIColor.systemCyan
+        answer4Button.tintColor = UIColor.systemMint
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
@@ -54,9 +54,9 @@ class QuizViewController: UIViewController {
         let userGotItRight = countryManager.checkAnswer(userAnswer: userAnswer!)
 
         if(userGotItRight) {
-            sender.backgroundColor = UIColor.green
+            sender.tintColor = UIColor.green
         } else {
-            sender.backgroundColor = UIColor.red
+            sender.tintColor = UIColor.red
         }
 
         Timer.scheduledTimer(timeInterval: 0.4, target: self,
