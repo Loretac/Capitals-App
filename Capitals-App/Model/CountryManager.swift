@@ -19,17 +19,14 @@ struct CountryManager {
         let data = readJSONFromFile(fileName: "data")
 
         if let safeData = data {
-            countryList = safeData
+            let sortedSafeData = safeData.sorted(by: { $0.name < $1.name })
+            countryList = sortedSafeData
         }
-
-        for item in countryList {
-            print("\(item.name) | \(item.capital)")
-        }
-
-
     }
-
-
+    
+    func getCountryList() -> [CountryModel]{
+        return countryList
+    }
 
     mutating func loadQuestion() {
         // For now, just load a random question. In future, we may increment it
@@ -48,9 +45,7 @@ struct CountryManager {
     }
 
     func getQuestionText() -> String {
-
         return currentQuestion!.name
-
     }
 
     func getOptionsText(quizTypeIsCapitals: Bool) -> [String] {
@@ -80,18 +75,7 @@ struct CountryManager {
         }else{
             return false
         }
-        
-        
-        if(userAnswer == currentQuestion?.capital) {
-            return true
-        } else {
-            return false
-        }
     }
-
-
-
-
 
 //     from https://www.knowband.com/blog/tutorials/read-data-local-json-file-swift/
     func readJSONFromFile(fileName: String) -> [CountryModel]?

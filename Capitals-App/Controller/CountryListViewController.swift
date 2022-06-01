@@ -9,8 +9,19 @@ import UIKit
 
 class CountryListViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    var countryManager = CountryManager()
+
+    var listOfCountries: [CountryModel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.dataSource = self
+        
+        countryManager.initData()
+        listOfCountries = countryManager.getCountryList()
 
         // Do any additional setup after loading the view.
     }
@@ -26,4 +37,18 @@ class CountryListViewController: UIViewController {
     }
     */
 
+}
+
+extension CountryListViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return listOfCountries.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath)
+        cell.textLabel?.text = listOfCountries[indexPath.row].name
+        return cell
+    }
+    
+    
 }

@@ -192,20 +192,48 @@
                     <view key="view" contentMode="scaleToFill" id="LSY-w3-m48">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7Y9-hb-tBs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="fCd-fA-XNb">
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fCd-fA-XNb" id="lLy-RG-Sub">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tcO-G5-c9x"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tcO-G5-c9x" firstAttribute="bottom" secondItem="7Y9-hb-tBs" secondAttribute="bottom" id="3Wa-xe-00j"/>
+                            <constraint firstItem="7Y9-hb-tBs" firstAttribute="leading" secondItem="tcO-G5-c9x" secondAttribute="leading" id="BAJ-M1-OCQ"/>
+                            <constraint firstItem="7Y9-hb-tBs" firstAttribute="trailing" secondItem="tcO-G5-c9x" secondAttribute="trailing" id="Ko0-c2-Xkq"/>
+                            <constraint firstItem="7Y9-hb-tBs" firstAttribute="top" secondItem="tcO-G5-c9x" secondAttribute="top" id="fco-DG-MVa"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Countries" image="list.dash" catalog="system" selectedImage="list.dash" id="Met-RW-03C"/>
+                    <connections>
+                        <outlet property="tableView" destination="7Y9-hb-tBs" id="hJ3-D5-nIZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fb5-tX-k20" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="187" y="795"/>
+            <point key="canvasLocation" x="186.40000000000001" y="794.75262368815595"/>
         </scene>
     </scenes>
     <resources>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="globe.americas.fill" catalog="system" width="128" height="121"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
