@@ -37,45 +37,39 @@ class QuizViewController: UIViewController {
         countryNameLabel.text = countryManager.getQuestionText()
 
         let optionsList: [String] = countryManager.getOptionsText(quizTypeIsCapitals: quizTypeIsCapitals)
-        
-        if(quizTypeIsCapitals == true){
-            
-            
-            
-            answer1Button.setBackgroundImage(nil, for: .normal)
-            answer2Button.setBackgroundImage(nil, for: .normal)
-            answer3Button.setBackgroundImage(nil, for: .normal)
-            answer4Button.setBackgroundImage(nil, for: .normal)
 
-            answer1Button.setTitle(optionsList[0], for: .normal)
-            answer2Button.setTitle(optionsList[1], for: .normal)
-            answer3Button.setTitle(optionsList[2], for: .normal)
-            answer4Button.setTitle(optionsList[3], for: .normal)
+        setButtonAppearance(button: answer1Button, optionString: optionsList[0])
+        setButtonAppearance(button: answer2Button, optionString: optionsList[1])
+        setButtonAppearance(button: answer3Button, optionString: optionsList[2])
+        setButtonAppearance(button: answer4Button, optionString: optionsList[3])
+    }
 
-            answer1Button.tintColor = UIColor.systemBlue
-            answer2Button.tintColor = UIColor.systemBlue
-            answer3Button.tintColor = UIColor.systemBlue
-            answer4Button.tintColor = UIColor.systemBlue
-        }else{
-            
-            answer1Button.setTitle("", for: .normal)
-            answer2Button.setTitle("", for: .normal)
-            answer3Button.setTitle("", for: .normal)
-            answer4Button.setTitle("", for: .normal)
-            
+    func setButtonAppearance(button: UIButton, optionString: String) {
+        let radius = 15.0
 
-            answer1Button.setBackgroundImage(UIImage(named: "\(optionsList[0].lowercased()).pdf"), for: .normal)
-            answer2Button.setBackgroundImage(UIImage(named: "\(optionsList[1].lowercased()).pdf"), for: .normal)
-            answer3Button.setBackgroundImage(UIImage(named: "\(optionsList[2].lowercased()).pdf"), for: .normal)
-            answer4Button.setBackgroundImage(UIImage(named: "\(optionsList[3].lowercased()).pdf"), for: .normal)
+        if(quizTypeIsCapitals == true) {
+            let buttonColor = UIColor.systemTeal
 
+            button.setImage(nil, for: .normal)
+            button.setTitle(optionString, for: .normal)
+            button.titleLabel?.lineBreakMode = .byWordWrapping
+            button.titleLabel?.numberOfLines = 0
+            button.titleLabel?.textAlignment = .center
+            button.setTitleColor(UIColor.black, for: .normal)
+            button.titleLabel!.font = UIFont.systemFont(ofSize: 25)
+            button.backgroundColor = buttonColor
+            button.layer.cornerRadius = radius
 
-//
-//            answer1Button.imageView?.contentMode = .scaleAspectFit
-//            answer1Button.imageEdgeInsets = UIEdgeInsets(top: 40, left: 40, bottom: 40, right: 40)
+            button.layer.shadowColor = UIColor.black.cgColor
+            button.layer.shadowOpacity = 0.2
+            button.layer.shadowOffset = CGSize(width: 0, height: 0)
+            button.layer.shadowRadius = 15.0
+        } else {
+            button.setTitle("", for: .normal)
+            button.setImage(UIImage(named: "\(optionString.lowercased()).svg")?.withRenderingMode(.alwaysOriginal), for: .normal)
+            button.imageView?.layer.cornerRadius = radius
+
         }
-
-
     }
 
     @IBAction func answerButtonPressed(_ sender: UIButton) {
@@ -102,9 +96,9 @@ class QuizViewController: UIViewController {
         } else {
             quizTypeIsCapitals = false
         }
-        
+
         countryManager.loadQuestion()
-        
+
         updateUI()
     }
 }

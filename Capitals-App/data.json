@@ -447,19 +447,14 @@
        "iso_code": "KI"
      },
      {
-       "name": "Korea, North",
+       "name": "North Korea",
        "capital": "Pyongyang",
        "iso_code": "KP"
      },
      {
-       "name": "Korea, South",
+       "name": "South Korea",
        "capital": "Seoul",
        "iso_code": "KR"
-     },
-     {
-       "name": "Kosovo",
-       "capital": "Pristina",
-       "iso_code": "-"
      },
      {
        "name": "Kuwait",
