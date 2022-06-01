@@ -48,7 +48,7 @@ class QuizViewController: UIViewController {
         let radius = 15.0
 
         if(quizTypeIsCapitals == true) {
-            let buttonColor = UIColor.systemTeal
+            let buttonColor = UIColor.white
 
             button.setImage(nil, for: .normal)
             button.setTitle(optionString, for: .normal)
@@ -56,7 +56,7 @@ class QuizViewController: UIViewController {
             button.titleLabel?.numberOfLines = 0
             button.titleLabel?.textAlignment = .center
             button.setTitleColor(UIColor.black, for: .normal)
-            button.titleLabel!.font = UIFont.systemFont(ofSize: 25)
+            button.titleLabel!.font = UIFont.systemFont(ofSize: 25, weight: .bold)
             button.backgroundColor = buttonColor
             button.layer.cornerRadius = radius
 
