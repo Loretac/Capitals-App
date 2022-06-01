@@ -50,7 +50,7 @@ extension CountryListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! CountryCell
         cell.countryNameLabel.text = listOfCountries[indexPath.row].name
         cell.capitalLabel.text =   listOfCountries[indexPath.row].capital
-        cell.flagImage.image = UIImage(named: "\(listOfCountries[indexPath.row].iso_code).svg")
+        cell.flagImage.image = UIImage(named: "\(listOfCountries[indexPath.row].iso_code.lowercased()).png")
         return cell
     }
 

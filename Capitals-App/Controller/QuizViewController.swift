@@ -67,7 +67,7 @@ class QuizViewController: UIViewController {
             button.setImage(nil, for: .normal)
         } else {
             button.setTitleColor(UIColor.clear, for: .normal)
-            button.setImage(UIImage(named: "\(optionString.lowercased()).svg")?.withRenderingMode(.alwaysOriginal), for: .normal)
+            button.setImage(UIImage(named: "\(optionString.lowercased()).png")?.withRenderingMode(.alwaysOriginal), for: .normal)
         }
     }
 
