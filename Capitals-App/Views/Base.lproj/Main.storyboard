@@ -195,9 +195,10 @@
                         <subviews>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="7Cb-SP-Tc7">
                                 <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <gestureRecognizers/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7Y9-hb-tBs">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="7Y9-hb-tBs">
                                 <rect key="frame" x="0.0" y="95" width="414" height="718"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -214,6 +215,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tcO-G5-c9x"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="tcO-G5-c9x" firstAttribute="bottom" secondItem="7Y9-hb-tBs" secondAttribute="bottom" id="3Wa-xe-00j"/>
                             <constraint firstItem="7Y9-hb-tBs" firstAttribute="leading" secondItem="tcO-G5-c9x" secondAttribute="leading" id="BAJ-M1-OCQ"/>
@@ -223,6 +225,9 @@
                             <constraint firstItem="7Cb-SP-Tc7" firstAttribute="top" secondItem="tcO-G5-c9x" secondAttribute="top" id="j6x-SD-RyG"/>
                             <constraint firstItem="7Cb-SP-Tc7" firstAttribute="leading" secondItem="7Y9-hb-tBs" secondAttribute="leading" id="y6D-mV-LIK"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="XXn-NP-lPt" appends="YES" id="t9r-gQ-rLC"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Countries" image="list.dash" catalog="system" selectedImage="list.dash" id="Met-RW-03C"/>
                     <connections>
@@ -231,6 +236,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fb5-tX-k20" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="XXn-NP-lPt">
+                    <connections>
+                        <action selector="tapToHideKeyboard:" destination="hCV-CH-RSc" id="8Qe-uZ-dap"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="185.50724637681162" y="794.19642857142856"/>
         </scene>
