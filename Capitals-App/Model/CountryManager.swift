@@ -72,7 +72,16 @@ struct CountryManager {
         return optionsList.shuffled()
     }
 
-    func checkAnswer(userAnswer: String) -> Bool {
+    func checkAnswer(quizTypeIsCapitals: Bool, userAnswer: String) -> Bool {
+        
+        if(quizTypeIsCapitals == true && userAnswer == currentQuestion?.capital
+        || quizTypeIsCapitals == false && userAnswer == currentQuestion?.iso_code){
+            return true
+        }else{
+            return false
+        }
+        
+        
         if(userAnswer == currentQuestion?.capital) {
             return true
         } else {

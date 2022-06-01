@@ -46,29 +46,28 @@ class QuizViewController: UIViewController {
 
     func setButtonAppearance(button: UIButton, optionString: String) {
         let radius = 15.0
-
+        
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOpacity = 0.2
+        button.layer.shadowOffset = CGSize(width: 0, height: 0)
+        button.layer.shadowRadius = 15.0
+        
+        button.setTitle(optionString, for: .normal)
+        button.titleLabel?.lineBreakMode = .byWordWrapping
+        button.titleLabel?.numberOfLines = 0
+        button.titleLabel?.textAlignment = .center
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.titleLabel!.font = UIFont.systemFont(ofSize: 25, weight: .bold)
+        
+        button.layer.cornerRadius = radius
+        button.imageView?.layer.cornerRadius = radius
+        button.backgroundColor =  UIColor.white
+        
         if(quizTypeIsCapitals == true) {
-            let buttonColor = UIColor.white
-
             button.setImage(nil, for: .normal)
-            button.setTitle(optionString, for: .normal)
-            button.titleLabel?.lineBreakMode = .byWordWrapping
-            button.titleLabel?.numberOfLines = 0
-            button.titleLabel?.textAlignment = .center
-            button.setTitleColor(UIColor.black, for: .normal)
-            button.titleLabel!.font = UIFont.systemFont(ofSize: 25, weight: .bold)
-            button.backgroundColor = buttonColor
-            button.layer.cornerRadius = radius
-
-            button.layer.shadowColor = UIColor.black.cgColor
-            button.layer.shadowOpacity = 0.2
-            button.layer.shadowOffset = CGSize(width: 0, height: 0)
-            button.layer.shadowRadius = 15.0
         } else {
-            button.setTitle("", for: .normal)
+            button.setTitleColor(UIColor.clear, for: .normal)
             button.setImage(UIImage(named: "\(optionString.lowercased()).svg")?.withRenderingMode(.alwaysOriginal), for: .normal)
-            button.imageView?.layer.cornerRadius = radius
-
         }
     }
 
@@ -76,12 +75,16 @@ class QuizViewController: UIViewController {
 
         let userAnswer = sender.currentTitle
 
-        let userGotItRight = countryManager.checkAnswer(userAnswer: userAnswer!)
+        let userGotItRight = countryManager.checkAnswer(quizTypeIsCapitals: quizTypeIsCapitals, userAnswer: userAnswer!)
 
         if(userGotItRight) {
-            sender.tintColor = UIColor.green
+            sender.layer.shadowColor = UIColor.green.cgColor
+            sender.layer.shadowOpacity = 1
         } else {
-            sender.tintColor = UIColor.red
+            sender.layer.shadowColor = UIColor.red.cgColor
+            sender.layer.shadowOpacity = 1
+
+//            sender.tintColor = UIColor.red
         }
 
         Timer.scheduledTimer(timeInterval: 0.4, target: self,
