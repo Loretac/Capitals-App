@@ -10,22 +10,24 @@ import UIKit
 class CountryListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
+
     var countryManager = CountryManager()
 
     var listOfCountries: [CountryModel] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         tableView.dataSource = self
-        
+
         countryManager.initData()
         listOfCountries = countryManager.getCountryList()
 
+        tableView.register(UINib(nibName: "CountryCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
+
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation
@@ -39,16 +41,18 @@ class CountryListViewController: UIViewController {
 
 }
 
-extension CountryListViewController: UITableViewDataSource{
+extension CountryListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listOfCountries.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath)
-        cell.textLabel?.text = listOfCountries[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! CountryCell
+        cell.countryNameLabel.text = listOfCountries[indexPath.row].name
+        cell.capitalLabel.text =   listOfCountries[indexPath.row].capital
+        cell.flagImage.image = UIImage(named: "\(listOfCountries[indexPath.row].iso_code).svg")
         return cell
     }
-    
-    
+
+
 }
