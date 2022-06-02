@@ -58,7 +58,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="384" height="177.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spF-Ia-VK3">
-                                                        <rect key="frame" x="0.0" y="28.5" width="184.5" height="120"/>
+                                                        <rect key="frame" x="0.0" y="32.5" width="173" height="112.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="spF-Ia-VK3" secondAttribute="height" multiplier="20:13" id="SRb-kQ-CQB"/>
                                                         </constraints>
@@ -72,7 +72,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQy-7d-86o">
-                                                        <rect key="frame" x="199.5" y="28.5" width="184.5" height="120"/>
+                                                        <rect key="frame" x="211" y="32.5" width="173" height="112.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="fQy-7d-86o" secondAttribute="height" multiplier="20:13" id="1iv-fg-ZgK"/>
                                                         </constraints>
@@ -85,15 +85,15 @@
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="fQy-7d-86o" firstAttribute="width" secondItem="DcV-Aa-Jcv" secondAttribute="width" multiplier="0.48" id="C5p-yt-Equ"/>
-                                                    <constraint firstItem="spF-Ia-VK3" firstAttribute="width" secondItem="DcV-Aa-Jcv" secondAttribute="width" multiplier="0.48" id="hye-f7-mab"/>
+                                                    <constraint firstItem="fQy-7d-86o" firstAttribute="width" secondItem="DcV-Aa-Jcv" secondAttribute="width" multiplier="0.45" id="C5p-yt-Equ"/>
+                                                    <constraint firstItem="spF-Ia-VK3" firstAttribute="width" secondItem="DcV-Aa-Jcv" secondAttribute="width" multiplier="0.45" id="hye-f7-mab"/>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="h6Q-ij-KvZ" userLabel="3,4 Stack View">
                                                 <rect key="frame" x="0.0" y="192.5" width="384" height="177"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eF4-lv-Lsw">
-                                                        <rect key="frame" x="0.0" y="28.5" width="184.5" height="120"/>
+                                                        <rect key="frame" x="0.0" y="32" width="173" height="112.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="eF4-lv-Lsw" secondAttribute="height" multiplier="20:13" id="jqV-tx-L2B"/>
                                                         </constraints>
@@ -105,7 +105,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XC-qr-Nui">
-                                                        <rect key="frame" x="199.5" y="28.5" width="184.5" height="120"/>
+                                                        <rect key="frame" x="211" y="32" width="173" height="112.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="7XC-qr-Nui" secondAttribute="height" multiplier="20:13" id="Bsb-Cs-gsY"/>
                                                         </constraints>
@@ -118,8 +118,8 @@
                                                     </button>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="eF4-lv-Lsw" firstAttribute="width" secondItem="h6Q-ij-KvZ" secondAttribute="width" multiplier="0.48" id="7Qo-za-uCa"/>
-                                                    <constraint firstItem="7XC-qr-Nui" firstAttribute="width" secondItem="h6Q-ij-KvZ" secondAttribute="width" multiplier="0.48" id="Xac-LP-878"/>
+                                                    <constraint firstItem="eF4-lv-Lsw" firstAttribute="width" secondItem="h6Q-ij-KvZ" secondAttribute="width" multiplier="0.45" id="7Qo-za-uCa"/>
+                                                    <constraint firstItem="7XC-qr-Nui" firstAttribute="width" secondItem="h6Q-ij-KvZ" secondAttribute="width" multiplier="0.45" id="Xac-LP-878"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
