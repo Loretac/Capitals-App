@@ -69,7 +69,7 @@ extension CountryListViewController: UITableViewDataSource {
         cell.capitalLabel.text = filteredListOfCountries[indexPath.row].capital
         
         
-        let radius = 15.0
+        let radius = 10.0
         
         cell.flag.layer.shadowColor = UIColor.black.cgColor
         cell.flag.layer.shadowOpacity = 0.2
