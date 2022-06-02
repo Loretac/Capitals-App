@@ -11,9 +11,8 @@ class CountryCell: UITableViewCell {
 
     @IBOutlet weak var countryNameLabel: UILabel!
     @IBOutlet weak var capitalLabel: UILabel!
-    @IBOutlet weak var flagImage: UIImageView!
-
-
+    @IBOutlet weak var flag: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

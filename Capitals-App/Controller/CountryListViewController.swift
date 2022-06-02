@@ -67,7 +67,24 @@ extension CountryListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! CountryCell
         cell.countryNameLabel.text = filteredListOfCountries[indexPath.row].name
         cell.capitalLabel.text = filteredListOfCountries[indexPath.row].capital
-        cell.flagImage.image = UIImage(named: "\(filteredListOfCountries[indexPath.row].iso_code.lowercased()).png")
+        
+        
+        let radius = 15.0
+        
+        cell.flag.layer.shadowColor = UIColor.black.cgColor
+        cell.flag.layer.shadowOpacity = 0.2
+        cell.flag.layer.shadowOffset = CGSize(width: 0, height: 0)
+        cell.flag.layer.shadowRadius = 15.0
+
+        
+        cell.flag.layer.cornerRadius = radius
+        cell.flag.imageView?.layer.cornerRadius = radius
+        cell.flag.backgroundColor =  UIColor.white
+        
+        cell.flag.setImage(UIImage(named: "\(filteredListOfCountries[indexPath.row].iso_code.lowercased()).png")?.withRenderingMode(.alwaysOriginal), for: .normal)
+        
+        
+//        cell.flagImage.image = UIImage(named: "\(filteredListOfCountries[indexPath.row].iso_code.lowercased()).png")
 
 //        cell.flagImage.layer.shadowColor = UIColor.black.cgColor
 //        cell.flagImage.layer.shadowOpacity = 0.2
