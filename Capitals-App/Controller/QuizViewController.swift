@@ -38,6 +38,12 @@ class QuizViewController: UIViewController {
 
         let optionsList: [String] = countryManager.getOptionsText(quizTypeIsCapitals: quizTypeIsCapitals)
 
+        
+        answer1Button.isEnabled=true
+        answer2Button.isEnabled=true
+        answer3Button.isEnabled=true
+        answer4Button.isEnabled=true
+
         setButtonAppearance(button: answer1Button, optionString: optionsList[0])
         setButtonAppearance(button: answer2Button, optionString: optionsList[1])
         setButtonAppearance(button: answer3Button, optionString: optionsList[2])
@@ -71,8 +77,46 @@ class QuizViewController: UIViewController {
         }
     }
 
+    @IBAction func touchdown(_ sender: UIButton) {
+        print("x")
+        
+        UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.9, options: .curveEaseIn, animations: {
+
+            sender.transform = CGAffineTransform(scaleX: 0.92, y: 0.92)
+
+        })
+        
+    }
+    
+
+    
+    @IBAction func test(_ sender: UIButton) {
+        print("text")
+    }
+    
     @IBAction func answerButtonPressed(_ sender: UIButton) {
 
+
+
+        UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.9, options: .curveEaseIn, animations: {
+
+            sender.transform = CGAffineTransform(scaleX: 0.92, y: 0.92)
+
+        } ) { (_) in
+            UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
+                sender.transform = CGAffineTransform(scaleX: 1, y: 1)
+            }, completion: nil)
+    }
+
+        
+   
+        
+        answer1Button.isEnabled=false
+        answer2Button.isEnabled=false
+        answer3Button.isEnabled=false
+        answer4Button.isEnabled=false
+
+        
         let userAnswer = sender.currentTitle
 
         let userGotItRight = countryManager.checkAnswer(quizTypeIsCapitals: quizTypeIsCapitals, userAnswer: userAnswer!)
@@ -87,7 +131,7 @@ class QuizViewController: UIViewController {
 //            sender.tintColor = UIColor.red
         }
 
-        Timer.scheduledTimer(timeInterval: 0.4, target: self,
+        Timer.scheduledTimer(timeInterval: 0.6, target: self,
             selector: #selector(updateUI), userInfo: nil, repeats: false)
 
         countryManager.loadQuestion()
