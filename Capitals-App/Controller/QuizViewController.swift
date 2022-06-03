@@ -91,22 +91,20 @@ class QuizViewController: UIViewController {
 
         let userGotItRight = countryManager.checkAnswer(quizTypeIsCapitals: quizTypeIsCapitals, userAnswer: userAnswer!)
 
+        
+        sender.layer.shadowOpacity = 1
+        sender.layer.shadowRadius = 25.0
+        
+        
         if(userGotItRight) {
             sender.layer.shadowColor = UIColor.green.cgColor
-            sender.layer.shadowOpacity = 1
+   
         } else {
-            
-            
-//            let largeConfig = UIImage.SymbolConfiguration(pointSize: 140, weight: .bold, scale: .large)
-//
-//            let largeBoldDoc = UIImage(systemName: "doc.circle.fill")
-//
-//            sender.setImage(largeBoldDoc, for: .normal)
-//
-            
+        
             
             sender.layer.shadowColor = UIColor.red.cgColor
-            sender.layer.shadowOpacity = 1
+
+
 
 //            sender.tintColor = UIColor.red
         }
