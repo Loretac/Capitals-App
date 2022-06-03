@@ -39,6 +39,8 @@ class QuizViewController: UIViewController {
         let optionsList: [String] = countryManager.getOptionsText(quizTypeIsCapitals: quizTypeIsCapitals)
 
         
+
+        
         answer1Button.isEnabled=true
         answer2Button.isEnabled=true
         answer3Button.isEnabled=true
@@ -77,40 +79,8 @@ class QuizViewController: UIViewController {
         }
     }
 
-    @IBAction func touchdown(_ sender: UIButton) {
-        print("x")
-        
-        UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.9, options: .curveEaseIn, animations: {
-
-            sender.transform = CGAffineTransform(scaleX: 0.92, y: 0.92)
-
-        })
-        
-    }
-    
-
-    
-    @IBAction func test(_ sender: UIButton) {
-        print("text")
-    }
-    
     @IBAction func answerButtonPressed(_ sender: UIButton) {
 
-
-
-        UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.9, options: .curveEaseIn, animations: {
-
-            sender.transform = CGAffineTransform(scaleX: 0.92, y: 0.92)
-
-        } ) { (_) in
-            UIView.animate(withDuration: 0.15, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
-                sender.transform = CGAffineTransform(scaleX: 1, y: 1)
-            }, completion: nil)
-    }
-
-        
-   
-        
         answer1Button.isEnabled=false
         answer2Button.isEnabled=false
         answer3Button.isEnabled=false
@@ -125,6 +95,16 @@ class QuizViewController: UIViewController {
             sender.layer.shadowColor = UIColor.green.cgColor
             sender.layer.shadowOpacity = 1
         } else {
+            
+            
+//            let largeConfig = UIImage.SymbolConfiguration(pointSize: 140, weight: .bold, scale: .large)
+//
+//            let largeBoldDoc = UIImage(systemName: "doc.circle.fill")
+//
+//            sender.setImage(largeBoldDoc, for: .normal)
+//
+            
+            
             sender.layer.shadowColor = UIColor.red.cgColor
             sender.layer.shadowOpacity = 1
 
