@@ -34,14 +34,12 @@ struct CountryManager {
         // Make a copy of the list of countries
         var copyOfCountryList = countryList.shuffled()
 
-
         currentQuestion = copyOfCountryList.removeLast()
         selectionOptions = []
 
         for _ in 0...2 {
             selectionOptions.append(copyOfCountryList.removeLast())
         }
-
     }
 
     func getQuestionText() -> String {
@@ -51,12 +49,13 @@ struct CountryManager {
     func getOptionsText(quizTypeIsCapitals: Bool) -> [String] {
 
         var optionsList: [String] = []
-
+        
         if(quizTypeIsCapitals == true) {
             for country in selectionOptions {
                 optionsList.append(country.capital)
             }
             optionsList.append(currentQuestion!.capital)
+            
         } else {
             for country in selectionOptions {
                 optionsList.append(country.iso_code)
@@ -106,9 +105,5 @@ struct CountryManager {
             }
         }
         return json
-
     }
-
-
-
 }
