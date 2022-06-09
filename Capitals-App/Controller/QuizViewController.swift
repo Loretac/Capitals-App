@@ -17,30 +17,24 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var answer3Button: UIButton!
     @IBOutlet weak var answer4Button: UIButton!
 
-
     var countryManager = CountryManager()
     var quizTypeIsCapitals: Bool = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
 
         countryManager.initData()
-
-        countryManager.loadQuestion()
 
         updateUI()
     }
 
     @objc func updateUI() {
+        
+        countryManager.loadQuestion()
+        
         countryNameLabel.text = countryManager.getQuestionText()
 
         let optionsList: [String] = countryManager.getOptionsText(quizTypeIsCapitals: quizTypeIsCapitals)
-
-        answer1Button.isEnabled = true
-        answer2Button.isEnabled = true
-        answer3Button.isEnabled = true
-        answer4Button.isEnabled = true
 
         setButtonAppearance(button: answer1Button, optionString: optionsList[0])
         setButtonAppearance(button: answer2Button, optionString: optionsList[1])
@@ -51,6 +45,7 @@ class QuizViewController: UIViewController {
     func setButtonAppearance(button: UIButton, optionString: String) {
         let radius = 15.0
 
+        button.isEnabled = true
         button.layer.shadowColor = UIColor.black.cgColor
         button.layer.shadowOpacity = 0.2
         button.layer.shadowOffset = CGSize(width: 0, height: 0)
@@ -95,8 +90,6 @@ class QuizViewController: UIViewController {
 
         Timer.scheduledTimer(timeInterval: 0.6, target: self,
             selector: #selector(updateUI), userInfo: nil, repeats: false)
-
-        countryManager.loadQuestion()
     }
 
     @IBAction func quizTypeChanged(_ sender: Any) {
@@ -105,8 +98,6 @@ class QuizViewController: UIViewController {
         } else {
             quizTypeIsCapitals = false
         }
-
-        countryManager.loadQuestion()
 
         updateUI()
     }
