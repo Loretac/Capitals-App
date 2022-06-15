@@ -168,6 +168,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="zop-P5-kEH"/>
                         <segue destination="hCV-CH-RSc" kind="relationship" relationship="viewControllers" id="BA9-Wf-6ZB"/>
+                        <segue destination="OFk-dh-Qdh" kind="relationship" relationship="viewControllers" id="AWJ-Z1-7UF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mgo-wo-rhu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -233,8 +234,25 @@
             </objects>
             <point key="canvasLocation" x="185.50724637681162" y="794.19642857142856"/>
         </scene>
+        <!--Settings-->
+        <scene sceneID="NZD-Yf-0nc">
+            <objects>
+                <viewController id="OFk-dh-Qdh" customClass="SettingsViewController" customModule="Capitals_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="COT-Uh-OP2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="e1N-X0-E19"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" selectedImage="gear" id="xyR-O1-m9a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5UR-dG-ju0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947" y="793"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="globe.americas.fill" catalog="system" width="128" height="121"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <systemColor name="systemBackgroundColor">
